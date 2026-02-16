@@ -1,0 +1,19 @@
+import ContactSection from "@/components/Home/contactSection";
+import { AmenitiesSection } from "@/components/our-projects/mangalya-novena-green/amenitiesSection";
+import { DiscoverSection } from "@/components/our-projects/mangalya-novena-green/discoverSection";
+import FloorPlanSection from "@/components/our-projects/mangalya-novena-green/floorPlanSection";
+import HeroSection from "@/components/our-projects/mangalya-novena-green/hero";
+
+function page() {
+  return (
+    <div>
+      <HeroSection />
+      <DiscoverSection />
+      <FloorPlanSection />
+      <AmenitiesSection />
+      <ContactSection />
+    </div>
+  );
+}
+
+export default page;
