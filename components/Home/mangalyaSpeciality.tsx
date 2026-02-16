@@ -20,7 +20,14 @@ const features = [
   },
 ];
 
-const FeatureCard = ({ title, description, iconUrl }) => (
+type FeatureCardProps = {
+  title: string;
+  description: string;
+  iconUrl: string;
+};
+
+
+const FeatureCard = ({ title, description, iconUrl }: FeatureCardProps) => (
   <div className="relative w-full max-w-[520px] min-h-[145px] flex items-center">
     {/* CUSTOM SVG BORDER - Precise S-Curve Path */}
     <svg
