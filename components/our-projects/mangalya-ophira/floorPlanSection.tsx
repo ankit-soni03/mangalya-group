@@ -4,35 +4,43 @@ import Image from "next/image";
 const floorPlans = [
   {
     id: 1,
-    src: "/our-projects/mangalya-ophira/floor-plans1.png"
+    src: "/our-projects/mangalya-ophira/floor-plans1.png",
+    title: "Floor Plan 1",
   },
   {
     id: 2,
-    src: "/our-projects/mangalya-ophira/floor-plans2.png"
+    src: "/our-projects/mangalya-ophira/floor-plans2.png",
+    title: "Floor Plan 2",
   },
   {
     id: 3,
-    src: "/our-projects/mangalya-ophira/floor-plans3.png"
+    src: "/our-projects/mangalya-ophira/floor-plans3.png",
+    title: "Floor Plan 3",
   },
   {
     id: 4,
-    src: "/our-projects/mangalya-ophira/floor-plans4.png"
+    src: "/our-projects/mangalya-ophira/floor-plans4.png",
+    title: "Floor Plan 4",
   },
   {
     id: 5,
-    src: "/our-projects/mangalya-ophira/floor-plans5.png"
+    src: "/our-projects/mangalya-ophira/floor-plans5.png",
+    title: "Floor Plan 5",
   },
   {
     id: 6,
     src: "/our-projects/mangalya-ophira/floor-plans6.png",
+    title: "Floor Plan 6",
   },
   {
     id: 7,
     src: "/our-projects/mangalya-ophira/floor-plans7.png",
+    title: "Floor Plan 7",
   },
   {
     id: 8,
     src: "/our-projects/mangalya-ophira/floor-plans8.png",
+    title: "Floor Plan 8",
   },
 ];
 

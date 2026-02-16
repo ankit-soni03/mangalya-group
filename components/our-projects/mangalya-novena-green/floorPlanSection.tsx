@@ -49,7 +49,7 @@ export default function FloorPlanSection() {
   );
 }
 
-function FloorCard({ img }) {
+function FloorCard({ img }: { img: string }) {
   return (
     <div className="relative w-full h-[300px] bg-white overflow-hidden">
       <Image src={img} alt="Floor Plan" fill className="object-contain p-3" />
