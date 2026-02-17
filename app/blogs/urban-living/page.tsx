@@ -1,7 +1,7 @@
 import AmenitiesArmsRace from "@/components/blogs/urban-living/amenitiesArmsRace";
 import CityComingIntoOwn from "@/components/blogs/urban-living/cityComingIntoOwn";
 import ConsideringGreaterNoida from "@/components/blogs/urban-living/consideringGreaterNoida";
-import UrbanHomeBlog from "@/components/blogs/urban-living/hero";
+import { UrbanHomeBlog } from "@/components/blogs/urban-living/hero";
 import LifestyleEvolution from "@/components/blogs/urban-living/lifestyleEvolution";
 import MangalyaPerspective from "@/components/blogs/urban-living/mangalyaPerspective";
 

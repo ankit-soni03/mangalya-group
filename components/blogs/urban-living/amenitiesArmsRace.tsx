@@ -22,21 +22,21 @@ export default function AmenitiesArmsRace() {
   ];
 
   return (
-    <section className="bg-[#2b2b2b] py-20">
-      <div className="max-w-7xl mx-auto px-4 text-center text-white">
+    <section className="bg-[#292929] pt-8 pb-16 md:pb-20 md:pt-12">
+      <div className="max-w-5xl mx-auto px-4 text-center text-white">
         
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-semibold">
+        <h2 className="font-poppins text-[25px] md:text-[30px] font-medium">
           The Amenities Arms Race
         </h2>
 
         {/* Script subtitle */}
-        <p className="font-handwritten text-2xl mt-2 opacity-90">
+        <p className="font-handwritten text-[25px] md:text-[30px] font-regular mt-1 opacity-90">
           (And Why You’re Winning)
         </p>
 
         {/* Description */}
-        <p className="max-w-3xl mx-auto mt-6 text-sm md:text-base text-gray-300 leading-relaxed">
+        <p className="max-w-3xl mx-auto mt-6 text-[13px] md:text-[15px] font-light font-poppins text-gray-300 leading-relaxed">
           This is how Greater Noida is leading the way: the days of a small gym
           and a kids’ slide being touted as “world-class amenities” are over.
         </p>
@@ -45,7 +45,7 @@ export default function AmenitiesArmsRace() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 mt-14">
           {amenities.map((item, index) => (
             <div key={index} className="text-center">
-              <div className="relative w-full h-[220px] overflow-hidden">
+              <div className="relative w-full h-[220px] md:h-[180px] overflow-hidden">
                 <Image
                   src={item.img}
                   alt={item.title}
@@ -54,7 +54,7 @@ export default function AmenitiesArmsRace() {
                 />
               </div>
 
-              <p className="mt-4 text-sm text-gray-300">
+              <p className="font-poppins font-light mt-4 text-sm md:text-[13px] text-gray-300">
                 {item.title}
               </p>
             </div>
