@@ -4,14 +4,22 @@ import Link from "next/link";
 
 export default function ResidentsSayingSection() {
   return (
-    <section className="relative w-full h-[220px] md:h-[280px]">
-      
-      {/* Background Image */}
+    <section className="relative w-full h-[600px] md:h-[280px]">
+      {/* Desktop Background Image */}
       <Image
-        src="/blogs/mangalya-projects/img-2.png" // replace with your image
+        src="/blogs/mangalya-projects/img-2.png"
         alt="Residents Experience"
         fill
-        className="object-cover"
+        className="object-cover hidden md:block"
+        priority
+      />
+
+      {/* Mobile Background Image */}
+      <Image
+        src="/blogs/mangalya-projects/img-2-mobile.png"
+        alt="Residents Experience Mobile"
+        fill
+        className="object-cover block md:hidden h-700px"
         priority
       />
 
@@ -20,24 +28,24 @@ export default function ResidentsSayingSection() {
 
       {/* Content */}
       <div className="absolute inset-0 flex items-center">
-        <div className="max-w-7xl mx-auto px-4 w-full grid grid-cols-1 md:grid-cols-2 gap-8 text-white font-poppins">
-          
-          {/* LEFT */}
-          <div>
-            <h2 className="text-2xl md:text-3xl font-semibold leading-snug mb-4">
+        <div className="max-w-7xl mx-auto px-4 w-full h-full md:h-auto flex flex-col md:grid md:grid-cols-2 gap-4 md:gap-8 text-white font-poppins py-6 md:py-0">
+          {/* Title - always on top */}
+          <div className="flex flex-col justify-start md:justify-center">
+            <h2 className="font-poppins text-[25px] md:text-[30px] font-medium leading-snug mt-10 md:mt-0 md:mb-4">
               What Residents Are <br /> Actually Saying
             </h2>
 
+            {/* Button - hidden on mobile here, shown at bottom */}
             <Link
               href="/brochure"
-              className="inline-block bg-white text-black px-6 py-3 text-sm font-medium hover:bg-gray-200 transition"
+              className="hidden md:inline-block font-poppins bg-white text-black px-7 py-3 text-[16px] font-light hover:bg-gray-900 hover:text-white transition w-fit"
             >
               Download Brochure
             </Link>
           </div>
 
-          {/* RIGHT */}
-          <p className="text-sm md:text-base leading-relaxed text-gray-200 max-w-xl">
+          {/* Paragraph */}
+          <p className="font-poppins text-[14px] leading-relaxed text-gray-200 max-w-xl flex-1 md:flex-none overflow-y-auto md:overflow-visible">
             Unlike curated marketing claims, real voices from Mangalya Group
             residents reveal the true experience. Homeowners at Mangalya Novena
             Greens highlight everyday wins—usable green spaces, active
@@ -48,6 +56,15 @@ export default function ResidentsSayingSection() {
             living.
           </p>
 
+          {/* Button - only on mobile, pinned to bottom */}
+          <div className="block md:hidden mt-auto">
+            <Link
+              href="/brochure"
+              className="font-poppins inline-block bg-white text-black px-6 py-3 text-[14px] font-light hover:bg-gray-900 hover:text-white transition"
+            >
+              Download Brochure
+            </Link>
+          </div>
         </div>
       </div>
     </section>
