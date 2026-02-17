@@ -48,7 +48,7 @@ export default function WhatMakesMangalyaStandOut() {
                   key={i}
                   className={`p-4 ${
                     item.variant === "green"
-                      ? "bg-[#0a8a5a] text-white"
+                      ? "bg-[#008854] text-white"
                       : "bg-black text-white"
                   }`}
                 >
@@ -82,7 +82,7 @@ export default function WhatMakesMangalyaStandOut() {
                   <div
                     className={`w-full p-5 ${
                       item.variant === "green"
-                        ? "bg-[#0a8a5a] text-white"
+                        ? "bg-[#008854] text-white"
                         : "bg-black text-white"
                     }`}
                   >
