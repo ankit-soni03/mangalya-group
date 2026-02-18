@@ -4,14 +4,14 @@ import Image from "next/image";
 
 export function AmenitiesSection() {
   return (
-    <section className="bg-[#ededed] py-[60px] px-[20px]">
+    <section className="bg-[#ededed] py-10 md:py-[60px] px-[20px]">
       <div className="max-w-[1100px] mx-auto">
         {/* Heading */}
-        <h2 className="text-center text-[32px] font-semibold tracking-wide mb-2">
+        <h2 className="font-quattrocento text-center font-semibold leading-[1.28] text-[20px] md:text-[36px] lg:text-[40px] text-black tracking-wide">
           AMENITIES
         </h2>
 
-        <p className="text-center text-[16px] text-[#333] mb-[40px]">
+        <p className="font-poppins font-light text-[13px] md:text-[16px] text-[#3F3F3F] leading-[1.28] max-w-[550px] mb-8 mx-auto text-center mt-3 md:mt-4">
           Mangalya Novena Green Noida Extension Features
         </p>
 
