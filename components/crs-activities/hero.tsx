@@ -7,7 +7,7 @@ export function CRSHeroSection() {
     <section className="w-full p-0 sm:p-5">
       <div className="relative w-full">
         <Image
-          src="/crs-activity/heroCrs.png"
+          src="/crs-activity/heroCrs-home.png"
           alt="Contact-Us"
           width={1920}
           height={1080}

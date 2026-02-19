@@ -5,10 +5,10 @@ export default function BlogHero() {
   return (
     <section className="w-full">
       {/* Heading */}
-      <div className="flex flex-col items-center text-center mb-16 lg:mb-20 pt-8 lg:pt-16">
+      <div className="flex flex-col items-center text-center mb-6 md:mb-8 pt-8 md:pt-10">
         {/* Heading */}
         <div className="relative inline-flex items-center">
-          <h2 className="font-quattrocento font-semibold text-[30px] md:text-[36px] lg:text-[40px] text-black tracking-wide">
+          <h2 className="font-Montserrat font-medium text-[30px] md:text-[36px] lg:text-[40px] text-black tracking-wide">
             Blogs
           </h2>
 
@@ -25,7 +25,7 @@ export default function BlogHero() {
         </div>
 
         {/* Subtitle */}
-        <p className="mt-4 max-w-xl text-[16px] md:text-[18px] text-gray-600">
+        <p className="font-poppons font-light mt-1 max-w-xl text-[16px] md:text-[18px] text-gray-800">
           Where strategy meets execution—and growth follows.
         </p>
       </div>

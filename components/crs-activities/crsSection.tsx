@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function CSRSection() {
   return (
-    <section className="w-full bg-white pt-20 lg:py-20 px-4 overflow-hidden">
+    <section className="w-full bg-white py-10 px-4 overflow-hidden">
       <div className="max-w-6xl mx-auto relative">
         {/* Main Heading */}
         <h2 className="font-handwritten text-center text-4xl md:text-5xl lg:text-[60px] text-gray-800 mb-6 text-shadow-lg font-bold">
@@ -29,7 +29,7 @@ export default function CSRSection() {
           {/* Image Section - Order 1 on mobile, Order 2 on desktop */}
           <div className="relative w-full flex justify-center order-1 md:order-2">
             {/* Decorative Leaf Behind Image */}
-            <div className="absolute -right-6 -top-15 md:-right-30 -top-8 md:-top-45 w-20 md:w-44 lg:w-56 opacity-100 pointer-events-none">
+            <div className="absolute -right-6 -top-15 md:-right-30 -top-8 md:-top-45 w-20 md:w-44 lg:w-56 pointer-events-none">
               <Image
                 src="/crs-activity/leaf.png"
                 alt="Decoration"

@@ -9,7 +9,7 @@ export default function CSRInitiatives() {
         {/* Heading */}
         <div className="relative mb-2">
           {/* Decorative Image - FIXED */}
-          <div className="absolute -top-12 md:-top-28 -left-5 md:-left-15 w-16 md:w-28 lg:w-40 opacity-100 pointer-events-none">
+          <div className="absolute -top-12 md:-top-28 -left-5 md:-left-15 w-16 md:w-28 lg:w-40 opacity-200% pointer-events-none">
             <Image
               src="/crs-activity/leaf-a.png"
               alt="decorative"
