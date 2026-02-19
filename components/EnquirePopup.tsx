@@ -7,12 +7,8 @@ import { usePathname } from "next/navigation";
 const BROCHURE_MAP: Record<string, string> = {
   "mangalya-novena-green":
     "/our-projects/mangalya-novena-green/Novena-Greens-Brochure.pdf",
-
-  "mangalya-anant":
-    "/our-projects/mangalya-anant/anant_brochure.pdf",
-
-  "mangalya-ophira":
-    "/our-projects/mangalya-ophira/ophira_brochure.pdf",
+  "mangalya-anant": "/our-projects/mangalya-anant/anant_brochure.pdf",
+  "mangalya-ophira": "/our-projects/mangalya-ophira/ophira_brochure.pdf",
 };
 
 export default function EnquirePopup({
@@ -43,8 +39,7 @@ export default function EnquirePopup({
       err.email = "Invalid email";
 
     if (!number.trim()) err.number = "Number required";
-    else if (!/^\d{10}$/.test(number))
-      err.number = "Enter 10 digit number";
+    else if (!/^\d{10}$/.test(number)) err.number = "Enter 10 digit number";
 
     setErrors(err);
     return Object.keys(err).length === 0;
@@ -79,8 +74,10 @@ export default function EnquirePopup({
       />
 
       {/* Popup */}
-      <div className="relative w-[420px] bg-[#f7f7f7] rounded-md shadow-2xl px-8 py-7">
-        <h2 className="text-xl font-semibold mb-6">Enquire Now</h2>
+      <div className="relative w-full max-w-[420px] mx-4 sm:mx-0 bg-[#f7f7f7] rounded-md shadow-2xl px-5 sm:px-8 py-6 sm:py-7">
+        <h2 className="text-lg sm:text-xl font-semibold mb-5 sm:mb-6">
+          Enquire Now
+        </h2>
 
         <div className="space-y-5">
           {/* Name */}
@@ -114,9 +111,7 @@ export default function EnquirePopup({
             <input
               value={number}
               maxLength={10}
-              onChange={(e) =>
-                setNumber(e.target.value.replace(/\D/g, ""))
-              }
+              onChange={(e) => setNumber(e.target.value.replace(/\D/g, ""))}
               placeholder="Enter Number"
               className="w-full h-[52px] rounded-2xl border px-5 text-sm bg-white"
             />
@@ -134,10 +129,10 @@ export default function EnquirePopup({
             className="w-full rounded-2xl border px-5 py-3 text-sm bg-white resize-none"
           />
 
-          <div className="pt-4 flex justify-center">
+          <div className="pt-4 flex">
             <button
               onClick={handleSubmit}
-              className="bg-black text-white px-10 py-3 text-sm rounded-sm hover:bg-gray-900 transition"
+              className="w-full sm:w-auto bg-black  text-white px-10 py-3 text-sm rounded-sm hover:bg-gray-900 transition"
             >
               Submit
             </button>
