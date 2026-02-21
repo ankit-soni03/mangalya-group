@@ -32,16 +32,16 @@ const properties = [
 
 export function TopProperties() {
   return (
-    <section className="py-16 md:py-20 lg:py-24 px-4 sm:px-6 md:px-8 lg:px-12 bg-white">
+    <section className="py-6 md:py-12 px-4 sm:px-6 md:px-8 lg:px-12 bg-white">
       {/* Section Header */}
-      <div className="text-center mb-10 md:mb-12 lg:mb-14">
+      <div className="text-center mb-5 md:mb-10">
         {/* TOP-PERFORMING */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-bold text-black tracking-[0.15em] uppercase mb-2 md:mb-3 font-['Quattrocento_Sans']">
+        <h2 className="text-[30px] md:text-[60px] font-bold text-black uppercase font-['Quattrocento_Sans']">
           TOP-PERFORMING
         </h2>
 
         {/* Properties with decorative brackets */}
-        <div className="flex items-center justify-center gap-4 md:gap-6 lg:gap-8">
+        <div className="flex items-center justify-center gap-4 md:gap-6 lg:gap-18">
           {/* Left bracket */}
           <img
             src="/arrow-line-left.png"
@@ -49,7 +49,7 @@ export function TopProperties() {
             className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain opacity-70"
           />
 
-          <h3 className="text-4xl sm:text-5xl md:text-6xl lg:text-[64px] text-black font-['Carattere'] italic font-normal leading-none">
+          <h3 className="text-[35px] md:text-[60px] text-black font-handwritten font-bold leading-none">
             Properties
           </h3>
 
@@ -108,7 +108,7 @@ export function TopProperties() {
                     </p>
 
                     {/* RERA Number Box */}
-                    <div className="inline-flex items-center bg-teal-600 px-3 py-1.5 md:px-4 md:py-2">
+                    <div className="inline-flex items-center bg-[#008854] px-3 py-1.5 md:px-4 md:py-2">
                       <span className="text-white text-xs md:text-sm font-medium font-['Poppins']">
                         Rera No.
                       </span>
